@@ -51,7 +51,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Get all the Info regarding your favorite Crypto Currency
+            Get all the Info regarding your favorite Crypto Currency value in EUR & USD
           </Typography>
         </div>
         <Carousel />
