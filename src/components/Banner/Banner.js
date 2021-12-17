@@ -41,7 +41,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Cryptish Hunter
+            Cryptish Tracker
           </Typography>
           <Typography
             variant="subtitle2"
