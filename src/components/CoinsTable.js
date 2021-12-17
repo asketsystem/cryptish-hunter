@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Pagination from "@material-ui/lab/Pagination";
 import {
@@ -54,7 +54,6 @@ export default function CoinsTable() {
   });
 
   const classes = useStyles();
-  const history = useHistory();
 
   const darkTheme = createTheme({
     palette: {
