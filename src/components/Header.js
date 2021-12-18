@@ -51,7 +51,7 @@ function Header() {
               variant="h6"
               className={classes.title}
             >
-              Crypto Tracker
+              Cryptish Tracker
             </Typography>
             <Select
               variant="outlined"

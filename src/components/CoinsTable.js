@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Pagination from "@material-ui/lab/Pagination";
 import {
@@ -26,16 +26,8 @@ export function numberWithCommas(x) {
 export default function CoinsTable() {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
-  const history = useHistory();
 
-  const { currency, symbol, coins, loading, fetchCoins } = CryptoState();
-
-  console.log(coins);
-
-  useEffect(() => {
-    fetchCoins();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currency]);
+  const { symbol, coins, loading } = CryptoState();
 
   const useStyles = makeStyles({
     row: {
@@ -54,6 +46,7 @@ export default function CoinsTable() {
   });
 
   const classes = useStyles();
+  const history = useHistory();
 
   const darkTheme = createTheme({
     palette: {
